@@ -1,1 +1,1 @@
-# game-of-thrones-risk
+# Game of Thrones - Risk
