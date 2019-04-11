@@ -29,6 +29,7 @@ public class Main extends Application {
 	}
 	@Override
 	public void start(Stage window) throws Exception {
+		this.window = window;
 		
 		// Set start Scene
 		GridPane grid = new GridPane();
@@ -101,8 +102,16 @@ public class Main extends Application {
 		// Set the scene
 		startScene.getStylesheets().add("Stylesheet.css");
 		scene2.getStylesheets().add("Stylesheet.css");
+
+		
 		window.setScene(startScene);
 		window.setTitle("Game of Thrones - Risk");
+		
+		window.setOnCloseRequest(e -> {
+			e.consume();
+			closeProgram();
+		});
+		
 		window.show();
 	}
 	
@@ -133,6 +142,14 @@ public class Main extends Application {
 	    scroll.setPrefSize(1200, 900);
 	    scroll.setContent(layout);
 	    return scroll;
+	  }
+	  
+	  private void closeProgram() {
+		Boolean answer = ConfirmBox.display("Quit game", "Sure you want to quit?");
+		if(answer) {
+			window.close();
+			System.out.println("User has closed the program.");
+		}
 	  }
 	  
 	public static void main(String[] args) {
