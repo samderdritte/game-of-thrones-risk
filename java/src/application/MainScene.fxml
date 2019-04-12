@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.StackPane?>
+
+<BorderPane prefHeight="900.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+	
+	<left>
+		<HBox>
+   			<children>
+   			<VBox maxWidth="200.0" prefWidth="200.0">
+      		<children>
+      			<Text fill="#ffffff00" smooth="false" stroke="#da7b7b" text="Player 1">Additional Info 1</Text>
+      			<Text fill="WHITE" text="Number of Territories:">Additional Info 2</Text>
+                  <Text fill="WHITE" text="Complete Regions:" />
+                  <Text fill="#ffffff00" smooth="false" stroke="#d9b97c" text="Player 2" textAlignment="CENTER" />
+                  <Text fill="WHITE" text="Number of Territories:" />
+                  <Text fill="WHITE" text="Complete Regions:" />
+                  <Text fill="#ffffff00" smooth="false" stroke="#9cd97c" text="Player 3" textAlignment="CENTER" />
+                  <Text fill="WHITE" text="Number of Territories:" />
+                  <Text fill="WHITE" text="Complete Regions:" />
+                  <Text fill="#ffffff00" smooth="false" stroke="#7cb6d9" text="Player 4" textAlignment="CENTER" />
+                  <Text fill="WHITE" text="Number of Territories:" />
+                  <Text fill="WHITE" text="Complete Regions:" />
+                  <Text fill="#ffffff00" smooth="false" stroke="#9380d9" text="Player 5" textAlignment="CENTER" />
+                  <Text fill="WHITE" text="Number of Territories:" />
+                  <Text fill="WHITE" text="Complete Regions:" />
+                  <Text fill="#ffffff00" smooth="false" stroke="#cd80d9" text="Player 6" textAlignment="CENTER" />
+                  <Text fill="WHITE" text="Number of Territories:" />
+                  <Text fill="WHITE" text="Complete Regions:" />
+      		</children>
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+   			</VBox>
+   			</children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+		</HBox>
+		
+	</left>
+	<center>
+		<ScrollPane maxWidth="1000.0">
+   			<content>
+   			<StackPane maxWidth="960.0">
+   				<children>
+   					<ImageView fitWidth="960.0">
+      					<image>
+      						<Image url="@../img/GameOfThrones_Map.jpg" />
+     					</image>
+   					</ImageView>
+                  <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" translateX="260.0" translateY="90.0">
+                     <children>
+                        <Button mnemonicParsing="false" text="Skagos" />
+                        <Button mnemonicParsing="false" text="5" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" translateX="95.0" translateY="140.0">
+                     <children>
+                        <Button mnemonicParsing="false" text="The Gift" />
+                        <Button mnemonicParsing="false" text="5" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" translateX="210.0" translateY="230.0">
+                     <children>
+                        <Button mnemonicParsing="false" text="Karhold" />
+                        <Button mnemonicParsing="false" text="5" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" translateX="130.0" translateY="278.0">
+                     <children>
+                        <Button mnemonicParsing="false" text="The Dreadfort" />
+                        <Button mnemonicParsing="false" text="5" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" translateX="10.0" translateY="290.0">
+                     <children>
+                        <Button mnemonicParsing="false" text="Winterfell" />
+                        <Button mnemonicParsing="false" text="5" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" translateX="-170.0" translateY="175.0">
+                     <children>
+                        <Button mnemonicParsing="false" text="Bear Island" />
+                        <Button mnemonicParsing="false" text="5" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" translateX="-85.0" translateY="320.0">
+                     <children>
+                        <Button id="wolfswood" mnemonicParsing="false" onAction="#printUnits" styleClass="territoryname" text="Wolfswood" />
+                        <Button id="wolfswood" fx:id="wolfswood" mnemonicParsing="false" onAction="#printUnits" styleClass="unitcount" text="9" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" translateX="-280.0" translateY="440.0">
+                     <children>
+                        <Button id="stoneyshore" mnemonicParsing="false" styleClass="territoryname" text="Stoney Shore" />
+                        <Button id="stoneyshore" fx:id="stoneyshore" mnemonicParsing="false" onAction="#printUnits" styleClass="unitcount" text="5" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" translateX="-130.0" translateY="470.0">
+                     <children>
+                        <Button mnemonicParsing="false" text="Barrowlands" />
+                        <Button mnemonicParsing="false" text="5" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" translateX="120.0" translateY="490.0">
+                     <children>
+                        <Button mnemonicParsing="false" text="White Harbor" />
+                        <Button mnemonicParsing="false" text="5" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" translateX="200.0" translateY="410.0">
+                     <children>
+                        <Button mnemonicParsing="false" text="Widow's Watch" />
+                        <Button mnemonicParsing="false" text="5" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" translateX="-100.0" translateY="560.0">
+                     <children>
+                        <Button mnemonicParsing="false" text="The Neck" />
+                        <Button mnemonicParsing="false" text="5" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" translateX="-270.0" translateY="600.0">
+                     <children>
+                        <Button mnemonicParsing="false" text="Cape Kraken" />
+                        <Button mnemonicParsing="false" text="5" />
+                     </children>
+                  </VBox>
+   				</children>
+   				</StackPane>
+   			</content>
+		</ScrollPane>
+	</center>
+</BorderPane>
