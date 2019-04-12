@@ -22,3 +22,50 @@
 	-fx-text-fill: #FFF;
     -fx-background-color: #383838;
 }
+
+.territory-label, .dorne-territory-label, 
+.thereach-territory-label, .thewesterlands-territory-label,
+.theriverlands-territory-label, .thenorth-territory-label,
+.thecrownlands-territory-label, .thestormlands-territory-label,
+.theironislands-territory-label {
+	-fx-background-color: rgb(27, 89, 78);
+	-fx-text-fill: #fff;
+	-fx-border-color: #fff;
+	-fx-font-family: "Game of Thrones";
+	-fx-font-size: 7pt;
+	-fx-padding: 4;
+}
+.dorne-territory-label {
+	-fx-background-color: #803A1F;
+}
+.thereach-territory-label {
+	-fx-background-color: #4F604E;
+}
+.thewesterlands-territory-label {
+	-fx-background-color: #31171B;
+}
+.theriverlands-territory-label {
+	-fx-background-color: #132B45;
+}
+.thenorth-territory-label {
+	-fx-background-color: #46474A;
+}
+.thecrownlands-territory-label {
+	-fx-background-color: #906131;
+}
+.thestormlands-territory-label {
+	-fx-background-color: #5C4613;
+}
+.theironislands-territory-label {
+	-fx-background-color: #5C4613;
+}
+
+
+.territory-units-label {
+	-fx-background-color: yellow;
+	-fx-border-color: #fff;
+	-fx-text-fill: #383838;
+	-fx-font-family: "Game of Thrones";
+	-fx-font-size: 13pt;
+	-fx-padding: 3;
+}

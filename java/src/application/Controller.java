@@ -4,10 +4,12 @@ import java.io.IOException;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Group;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
@@ -16,9 +18,10 @@ public class Controller {
 	// Instance Variables for Buttons
 	public Button startButton;
 	public Button playerSelectButton;
-	public Button wolfswood;
-	public Button stoneyshore;
-	public Button button;
+
+	public Button button, button1, button2, button3;
+	public Node whichClicked;
+	public Label mountainsofthemoon_units;
 	
 	// Button for the first Scene
 	public void startGame(ActionEvent event) throws IOException {
@@ -51,19 +54,14 @@ public class Controller {
 		window.show();
 	}
 	
-	public void printUnits(ActionEvent event) throws IOException {
-		Button x = (Button) event.getSource();
-		if (x == wolfswood) {
-			System.out.println(event.getSource());
-		} else if (x == stoneyshore) {
-			System.out.println(event.getSource());
-		}
-			
-
-	}
-	public void printUnits2(ActionEvent event) throws IOException {
-		System.out.println(button.getText());
-	}
+	public void printUnits(ActionEvent e) {
+		Button btn = (Button) e.getSource();
+		System.out.println(btn.getText()+btn.getId());
+		Label units = (Label) btn.getParent().getChildrenUnmodifiable().get(1);
+		int numUnits = Integer.parseInt(units.getText());
+		numUnits++;
+		units.setText(Integer.toString(numUnits));
+        }
 	
 	
 }
