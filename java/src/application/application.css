@@ -1,3 +1,8 @@
+@font-face {
+    font-family: GameOfThrones;
+    src: url('GameOfThrones.tff');
+}
+
 .root{
 	-fx-background-color: #383838;
 	
@@ -23,6 +28,26 @@
     -fx-background-color: #383838;
 }
 
+Button:hover {
+	-fx-cursor: hand;
+}
+
+#close-button:hover{
+	-fx-cursor: hand;
+}
+.app-header-name {
+	-fx-text-fill: #FFF;	
+	-fx-font-family: 'Game Of Thrones';
+}
+
+.scroll-bar:vertical {
+    -fx-scale-x: 0;
+}
+.scroll-bar:horizontal {
+    -fx-scale-y: 0;
+}
+
+
 .territory-label, .dorne-territory-label, 
 .thereach-territory-label, .thewesterlands-territory-label,
 .theriverlands-territory-label, .thenorth-territory-label,
@@ -31,9 +56,15 @@
 	-fx-background-color: rgb(27, 89, 78);
 	-fx-text-fill: #fff;
 	-fx-border-color: #fff;
-	-fx-font-family: "Game of Thrones";
+	-fx-font-family: 'Game Of Thrones';
 	-fx-font-size: 7pt;
 	-fx-padding: 4;
+}
+.territory-label:hover {
+	-fx-background-color: #ac3939;
+}
+.thevaleofarryn-territory-label {
+	-fx-background-color: rgb(27, 89, 78);
 }
 .dorne-territory-label {
 	-fx-background-color: #803A1F;
@@ -50,6 +81,7 @@
 .thenorth-territory-label {
 	-fx-background-color: #46474A;
 }
+
 .thecrownlands-territory-label {
 	-fx-background-color: #906131;
 }
@@ -62,10 +94,28 @@
 
 
 .territory-units-label {
-	-fx-background-color: yellow;
+	-fx-background-color: white;
 	-fx-border-color: #fff;
 	-fx-text-fill: #383838;
-	-fx-font-family: "Game of Thrones";
-	-fx-font-size: 13pt;
-	-fx-padding: 3;
+	-fx-font-family: 'Game Of Thrones';
+	-fx-font-size: 11pt;
+	-fx-alignment: 'TOP_CENTER';
+}
+.territory-units-label-player1{
+	-fx-background-color: #da7b7b;
+}
+.territory-units-label-player2{
+	-fx-background-color: #d9b97c;
+}
+.territory-units-label-player3{
+	-fx-background-color: #9cd97c;
+}
+.territory-units-label-player4{
+	-fx-background-color: #7cb6d9;
+}
+.territory-units-label-player5{
+	-fx-background-color: #9380d9;
+}
+.territory-units-label-player6{
+	-fx-background-color: #cd80d9;
 }

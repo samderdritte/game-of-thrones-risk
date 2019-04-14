@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.String?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.Group?>
 <?import javafx.scene.control.Button?>
@@ -9,15 +10,16 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane prefHeight="1800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+<BorderPane maxHeight="1.7976931348623157E308" onMouseDragged="#dragged" onMousePressed="#pressed" prefHeight="700.0" prefWidth="1200.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
 	
 	<left>
-		<HBox>
+		<HBox prefHeight="700.0">
    			<children>
    			<VBox maxWidth="200.0" prefWidth="200.0">
       		<children>
@@ -52,19 +54,23 @@
 		
 	</left>
 	<center>
-		<ScrollPane maxWidth="1000.0">
+		<ScrollPane maxWidth="1018.0" style="-fx-background-color: #383838#383838;" stylesheets="@application.css">
    			<content>
-   			<StackPane maxWidth="960.0">
+   			<StackPane prefHeight="700.0" style="-fx-background-color: #383838;" stylesheets="@application.css">
    				<children>
-   					<ImageView fitWidth="960.0">
+   					<ImageView preserveRatio="true">
       					<image>
       						<Image url="@../img/GameOfThrones_Map.jpg" />
      					</image>
    					</ImageView>
-                  <Group nodeOrientation="LEFT_TO_RIGHT" translateX="80.0" translateY="-20.0" StackPane.alignment="CENTER">
+                  <Group nodeOrientation="LEFT_TO_RIGHT" stylesheets="@application.css" translateX="90.0" translateY="-30.0" StackPane.alignment="CENTER">
                      <children>
-                        <Button fx:id="button" mnemonicParsing="false" onAction="#printUnits" prefHeight="40.0" prefWidth="110.0" styleClass="territory-label" stylesheets="@application.css" text="Mountains of The Moon" wrapText="true" />
-                        <Label id="mountainsofthemoon_units" alignment="TOP_CENTER" cache="true" contentDisplay="TOP" depthTest="DISABLE" graphicTextGap="0.0" prefHeight="40.0" prefWidth="30.0" styleClass="territory-units-label" stylesheets="@application.css" text="1" textAlignment="JUSTIFY" textFill="#ff6924" translateX="109.0" wrapText="true">
+                        <Button fx:id="button" mnemonicParsing="false" onAction="#printUnits" prefHeight="25.0" prefWidth="170.0" stylesheets="@application.css" text="Mountains of The Moon" wrapText="true">
+                           <styleClass>
+                              <String fx:value="territory-label" />
+                              <String fx:value="thevaleofarryn-territory-label" />
+                           </styleClass></Button>
+                        <Label id="mountainsofthemoon_units" alignment="TOP_CENTER" cache="true" contentDisplay="TOP" depthTest="DISABLE" graphicTextGap="0.0" prefHeight="25.0" prefWidth="30.0" styleClass="territory-units-label" stylesheets="@application.css" text="1" textAlignment="JUSTIFY" textFill="#ff6924" translateX="169.0" wrapText="true">
                            <font>
                               <Font name="Game of Thrones" size="13.0" />
                            </font>
@@ -74,50 +80,70 @@
                         <Insets />
                      </StackPane.margin>
                   </Group>
-                  <Group accessibleRole="BUTTON" nodeOrientation="LEFT_TO_RIGHT" translateX="250.0" translateY="-105.0">
+                  <Group accessibleRole="BUTTON" nodeOrientation="LEFT_TO_RIGHT" stylesheets="@application.css" translateX="240.0" translateY="-105.0">
                      <children>
-                        <Button fx:id="button3" mnemonicParsing="false" onAction="#printUnits" prefHeight="40.0" prefWidth="110.0" styleClass="territory-label" stylesheets="@application.css" text="The Fingers" wrapText="true" />
-                        <Label alignment="TOP_CENTER" cache="true" contentDisplay="TOP" depthTest="DISABLE" graphicTextGap="0.0" prefHeight="40.0" prefWidth="30.0" styleClass="territory-units-label" stylesheets="@application.css" text="3" textAlignment="JUSTIFY" textFill="#ff6924" translateX="109.0" wrapText="true">
+                        <Button fx:id="button3" mnemonicParsing="false" onAction="#printUnits" prefHeight="25.0" prefWidth="80.0" stylesheets="@application.css" text="The Fingers" wrapText="true">
+                           <styleClass>
+                              <String fx:value="territory-label" />
+                              <String fx:value="thevaleofarryn-territory-label" />
+                           </styleClass></Button>
+                        <Label alignment="TOP_CENTER" cache="true" contentDisplay="TOP" depthTest="DISABLE" graphicTextGap="0.0" prefHeight="25.0" prefWidth="30.0" styleClass="territory-units-label" stylesheets="@application.css" text="3" textAlignment="JUSTIFY" textFill="#ff6924" translateX="79.0" wrapText="true">
                            <font>
                               <Font name="Game of Thrones" size="13.0" />
                            </font>
                         </Label>
                      </children>
                   </Group>
-                  <Group accessibleRole="BUTTON" nodeOrientation="LEFT_TO_RIGHT" translateX="260.0">
+                  <Group accessibleRole="BUTTON" nodeOrientation="LEFT_TO_RIGHT" stylesheets="@application.css" translateX="240.0">
                      <children>
-                        <Button fx:id="button2" mnemonicParsing="false" onAction="#printUnits" prefHeight="40.0" prefWidth="110.0" styleClass="territory-label" stylesheets="@application.css" text="The Eyrie" wrapText="true" />
-                        <Label alignment="TOP_CENTER" cache="true" contentDisplay="TOP" depthTest="DISABLE" graphicTextGap="0.0" prefHeight="40.0" prefWidth="30.0" styleClass="territory-units-label" stylesheets="@application.css" text="5" textAlignment="CENTER" textFill="#ff6924" translateX="109.0" wrapText="true">
+                        <Button fx:id="button2" mnemonicParsing="false" onAction="#printUnits" prefHeight="25.0" prefWidth="70.0" stylesheets="@application.css" text="The Eyrie" wrapText="true">
+                           <styleClass>
+                              <String fx:value="territory-label" />
+                              <String fx:value="thevaleofarryn-territory-label" />
+                           </styleClass></Button>
+                        <Label alignment="TOP_CENTER" cache="true" contentDisplay="TOP" depthTest="DISABLE" graphicTextGap="0.0" prefHeight="26.0" prefWidth="30.0" styleClass="territory-units-label" stylesheets="@application.css" text="5" textAlignment="CENTER" textFill="#ff6924" translateX="69.0" wrapText="true">
                            <font>
                               <Font name="Game of Thrones" size="13.0" />
                            </font>
                         </Label>
                      </children>
                   </Group>
-                  <Group accessibleRole="BUTTON" nodeOrientation="LEFT_TO_RIGHT" translateX="300.0" translateY="63.0">
+                  <Group accessibleRole="BUTTON" nodeOrientation="LEFT_TO_RIGHT" stylesheets="@application.css" translateX="280.0" translateY="55.0">
                      <children>
-                        <Button fx:id="button1" mnemonicParsing="false" onAction="#printUnits" prefHeight="40.0" prefWidth="110.0" styleClass="territory-label" stylesheets="@application.css" text="Gulltown" wrapText="true" />
-                        <Label alignment="TOP_CENTER" cache="true" contentDisplay="TOP" depthTest="DISABLE" graphicTextGap="0.0" prefHeight="40.0" prefWidth="30.0" styleClass="territory-units-label" stylesheets="@application.css" text="5" textAlignment="CENTER" textFill="#ff6924" translateX="109.0" wrapText="true">
+                        <Button fx:id="button1" mnemonicParsing="false" onAction="#printUnits" prefHeight="25.0" prefWidth="80.0" stylesheets="@application.css" text="Gulltown" wrapText="true">
+                           <styleClass>
+                              <String fx:value="territory-label" />
+                              <String fx:value="thevaleofarryn-territory-label" />
+                           </styleClass></Button>
+                        <Label alignment="TOP_CENTER" cache="true" contentDisplay="TOP" depthTest="DISABLE" graphicTextGap="0.0" prefHeight="25.0" prefWidth="30.0" styleClass="territory-units-label" stylesheets="@application.css" text="5" textAlignment="CENTER" textFill="#ff6924" translateX="79.0" wrapText="true">
                            <font>
                               <Font name="Game of Thrones" size="13.0" />
                            </font>
                         </Label>
                      </children>
                   </Group>
-                  <Group accessibleRole="BUTTON" nodeOrientation="LEFT_TO_RIGHT" translateX="75.0" translateY="630.0">
+                  <Group accessibleRole="BUTTON" nodeOrientation="LEFT_TO_RIGHT" stylesheets="@application.css" translateX="75.0" translateY="620.0">
                      <children>
-                        <Button fx:id="button11" mnemonicParsing="false" onAction="#printUnits" prefHeight="40.0" prefWidth="110.0" styleClass="dorne-territory-label" stylesheets="@application.css" text="Greenblood" wrapText="true" />
-                        <Label alignment="TOP_CENTER" cache="true" contentDisplay="TOP" depthTest="DISABLE" graphicTextGap="0.0" prefHeight="40.0" prefWidth="30.0" styleClass="territory-units-label" stylesheets="@application.css" text="5" textAlignment="CENTER" textFill="#ff6924" translateX="109.0" wrapText="true">
+                        <Button fx:id="button11" mnemonicParsing="false" onAction="#printUnits" prefHeight="25.0" prefWidth="90.0" stylesheets="@application.css" text="Greenblood" wrapText="true">
+                           <styleClass>
+                              <String fx:value="dorne-territory-label" />
+                              <String fx:value="territory-label" />
+                           </styleClass></Button>
+                        <Label alignment="TOP_CENTER" cache="true" contentDisplay="TOP" depthTest="DISABLE" graphicTextGap="0.0" prefHeight="25.0" prefWidth="30.0" styleClass="territory-units-label" stylesheets="@application.css" text="5" textAlignment="CENTER" textFill="#ff6924" translateX="89.0" wrapText="true">
                            <font>
                               <Font name="Game of Thrones" size="13.0" />
                            </font>
                         </Label>
                      </children>
                   </Group>
-                  <Group accessibleRole="BUTTON" nodeOrientation="LEFT_TO_RIGHT" styleClass="thereach-territory-label" stylesheets="@application.css" translateX="-30.0" translateY="285.0">
+                  <Group accessibleRole="BUTTON" nodeOrientation="LEFT_TO_RIGHT" styleClass="thereach-territory-label" stylesheets="@application.css" translateX="-30.0" translateY="270.0">
                      <children>
-                        <Button fx:id="button111" mnemonicParsing="false" onAction="#printUnits" prefHeight="40.0" prefWidth="110.0" styleClass="thereach-territory-label" stylesheets="@application.css" text="Blackwater Rush" wrapText="true" />
-                        <Label alignment="TOP_CENTER" cache="true" contentDisplay="TOP" depthTest="DISABLE" graphicTextGap="0.0" prefHeight="40.0" prefWidth="30.0" styleClass="territory-units-label" stylesheets="@application.css" text="5" textAlignment="CENTER" textFill="#ff6924" translateX="109.0" wrapText="true">
+                        <Button fx:id="button111" mnemonicParsing="false" onAction="#printUnits" prefHeight="25.0" prefWidth="130.0" stylesheets="@application.css" text="Blackwater Rush" wrapText="true">
+                           <styleClass>
+                              <String fx:value="thereach-territory-label" />
+                              <String fx:value="territory-label" />
+                           </styleClass></Button>
+                        <Label alignment="TOP_CENTER" cache="true" contentDisplay="TOP" depthTest="DISABLE" graphicTextGap="0.0" prefHeight="25.0" prefWidth="30.0" styleClass="territory-units-label" stylesheets="@application.css" text="5" textAlignment="CENTER" textFill="#ff6924" translateX="129.0" wrapText="true">
                            <font>
                               <Font name="Game of Thrones" size="13.0" />
                            </font>
@@ -126,8 +152,12 @@
                   </Group>
                   <Group accessibleRole="BUTTON" nodeOrientation="LEFT_TO_RIGHT" styleClass="thereach-territory-label" stylesheets="@application.css" translateX="-150.0" translateY="240.0">
                      <children>
-                        <Button fx:id="button1111" mnemonicParsing="false" onAction="#printUnits" prefHeight="40.0" prefWidth="110.0" styleClass="thewesterlands-territory-label" stylesheets="@application.css" text="Silverhill" wrapText="true" />
-                        <Label alignment="TOP_CENTER" cache="true" contentDisplay="TOP" depthTest="DISABLE" graphicTextGap="0.0" prefHeight="40.0" prefWidth="30.0" styleClass="territory-units-label" stylesheets="@application.css" text="5" textAlignment="CENTER" textFill="#ff6924" translateX="109.0" wrapText="true">
+                        <Button fx:id="button1111" mnemonicParsing="false" onAction="#printUnits" prefHeight="25.0" prefWidth="70.0" stylesheets="@application.css" text="Silverhill" wrapText="true">
+                           <styleClass>
+                              <String fx:value="thewesterlands-territory-label" />
+                              <String fx:value="territory-label" />
+                           </styleClass></Button>
+                        <Label alignment="TOP_CENTER" cache="true" contentDisplay="TOP" depthTest="DISABLE" graphicTextGap="0.0" prefHeight="25.0" prefWidth="30.0" styleClass="territory-units-label" stylesheets="@application.css" text="5" textAlignment="CENTER" textFill="#ff6924" translateX="69.0" wrapText="true">
                            <font>
                               <Font name="Game of Thrones" size="13.0" />
                            </font>
@@ -136,8 +166,12 @@
                   </Group>
                   <Group accessibleRole="BUTTON" nodeOrientation="LEFT_TO_RIGHT" styleClass="thereach-territory-label" stylesheets="@application.css" translateX="50.0" translateY="140.0">
                      <children>
-                        <Button fx:id="button11111" mnemonicParsing="false" onAction="#printUnits" prefHeight="40.0" prefWidth="110.0" styleClass="theriverlands-territory-label" stylesheets="@application.css" text="Harrenhall" wrapText="true" />
-                        <Label alignment="TOP_CENTER" cache="true" contentDisplay="TOP" depthTest="DISABLE" graphicTextGap="0.0" prefHeight="40.0" prefWidth="30.0" styleClass="territory-units-label" stylesheets="@application.css" text="5" textAlignment="CENTER" textFill="#ff6924" translateX="109.0" wrapText="true">
+                        <Button fx:id="button11111" mnemonicParsing="false" onAction="#printUnits" prefHeight="25.0" prefWidth="90.0" stylesheets="@application.css" text="Harrenhall" wrapText="true">
+                           <styleClass>
+                              <String fx:value="theriverlands-territory-label" />
+                              <String fx:value="territory-label" />
+                           </styleClass></Button>
+                        <Label alignment="TOP_CENTER" cache="true" contentDisplay="TOP" depthTest="DISABLE" graphicTextGap="0.0" prefHeight="25.0" prefWidth="30.0" styleClass="territory-units-label" stylesheets="@application.css" text="5" textAlignment="CENTER" textFill="#ff6924" translateX="89.0" wrapText="true">
                            <font>
                               <Font name="Game of Thrones" size="13.0" />
                            </font>
@@ -146,38 +180,608 @@
                   </Group>
                   <Group accessibleRole="BUTTON" nodeOrientation="LEFT_TO_RIGHT" styleClass="thereach-territory-label" stylesheets="@application.css" translateX="-70.0" translateY="-150.0">
                      <children>
-                        <Button fx:id="button111111" mnemonicParsing="false" onAction="#printUnits" prefHeight="40.0" prefWidth="110.0" styleClass="thenorth-territory-label" stylesheets="@application.css" text="The Neck" wrapText="true" />
-                        <Label alignment="TOP_CENTER" cache="true" contentDisplay="TOP" depthTest="DISABLE" graphicTextGap="0.0" prefHeight="40.0" prefWidth="30.0" styleClass="territory-units-label" stylesheets="@application.css" text="5" textAlignment="CENTER" textFill="#ff6924" translateX="109.0" wrapText="true">
+                        <Button fx:id="button111111" mnemonicParsing="false" onAction="#printUnits" prefHeight="25.0" prefWidth="80.0" stylesheets="@application.css" text="The Neck" wrapText="true">
+                           <styleClass>
+                              <String fx:value="thenorth-territory-label" />
+                              <String fx:value="territory-label" />
+                           </styleClass></Button>
+                        <Label alignment="TOP_CENTER" cache="true" contentDisplay="CENTER" depthTest="DISABLE" graphicTextGap="0.0" prefHeight="25.0" prefWidth="29.0" styleClass="territory-units-label" stylesheets="@application.css" text="5" textAlignment="CENTER" textFill="#ff6924" translateX="79.0" wrapText="true">
+                           <font>
+                              <Font name="Game of Thrones" size="10.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Group>
+                  <Group accessibleRole="BUTTON" nodeOrientation="LEFT_TO_RIGHT" styleClass="thereach-territory-label" stylesheets="@application.css" translateX="120.0" translateY="205.0">
+                     <children>
+                        <Button fx:id="button111112" mnemonicParsing="false" onAction="#printUnits" prefHeight="25.0" prefWidth="105.0" stylesheets="@application.css" text="King's Landing" wrapText="true">
+                           <styleClass>
+                              <String fx:value="thecrownlands-territory-label" />
+                              <String fx:value="territory-label" />
+                           </styleClass></Button>
+                        <Label alignment="TOP_CENTER" cache="true" contentDisplay="TOP" depthTest="DISABLE" graphicTextGap="0.0" prefHeight="25.0" prefWidth="30.0" styleClass="territory-units-label" stylesheets="@application.css" text="5" textAlignment="CENTER" textFill="#ff6924" translateX="104.0" wrapText="true">
                            <font>
                               <Font name="Game of Thrones" size="13.0" />
                            </font>
                         </Label>
                      </children>
                   </Group>
-                  <Group accessibleRole="BUTTON" nodeOrientation="LEFT_TO_RIGHT" styleClass="thereach-territory-label" stylesheets="@application.css" translateX="120.0" translateY="220.0">
+                  <Group accessibleRole="BUTTON" nodeOrientation="LEFT_TO_RIGHT" styleClass="thereach-territory-label" stylesheets="@application.css" translateX="180.0" translateY="375.0">
                      <children>
-                        <Button fx:id="button111112" mnemonicParsing="false" onAction="#printUnits" prefHeight="40.0" prefWidth="110.0" styleClass="thecrownlands-territory-label" stylesheets="@application.css" text="King's Landing" wrapText="true" />
-                        <Label alignment="TOP_CENTER" cache="true" contentDisplay="TOP" depthTest="DISABLE" graphicTextGap="0.0" prefHeight="40.0" prefWidth="30.0" styleClass="territory-units-label" stylesheets="@application.css" text="5" textAlignment="CENTER" textFill="#ff6924" translateX="109.0" wrapText="true">
+                        <Button fx:id="button1111121" mnemonicParsing="false" onAction="#printUnits" prefHeight="25.0" prefWidth="90.0" stylesheets="@application.css" text="Storm's End" wrapText="true">
+                           <styleClass>
+                              <String fx:value="thestormlands-territory-label" />
+                              <String fx:value="territory-label" />
+                           </styleClass></Button>
+                        <Label alignment="TOP_CENTER" cache="true" contentDisplay="TOP" depthTest="DISABLE" graphicTextGap="0.0" prefHeight="25.0" prefWidth="30.0" styleClass="territory-units-label" stylesheets="@application.css" text="5" textAlignment="CENTER" textFill="#ff6924" translateX="89.0" wrapText="true">
                            <font>
                               <Font name="Game of Thrones" size="13.0" />
                            </font>
                         </Label>
                      </children>
                   </Group>
-                  <Group accessibleRole="BUTTON" nodeOrientation="LEFT_TO_RIGHT" styleClass="thereach-territory-label" stylesheets="@application.css" translateX="180.0" translateY="380.0">
+                  <Group accessibleRole="BUTTON" nodeOrientation="LEFT_TO_RIGHT" styleClass="thereach-territory-label" stylesheets="@application.css" translateX="-310.0" translateY="5.0">
                      <children>
-                        <Button fx:id="button1111121" mnemonicParsing="false" onAction="#printUnits" prefHeight="40.0" prefWidth="110.0" styleClass="thestormlands-territory-label" stylesheets="@application.css" text="Storm's End" wrapText="true" />
-                        <Label alignment="TOP_CENTER" cache="true" contentDisplay="TOP" depthTest="DISABLE" graphicTextGap="0.0" prefHeight="40.0" prefWidth="30.0" styleClass="territory-units-label" stylesheets="@application.css" text="5" textAlignment="CENTER" textFill="#ff6924" translateX="109.0" wrapText="true">
+                        <Button fx:id="button11112" mnemonicParsing="false" onAction="#printUnits" prefHeight="25.0" prefWidth="40.0" stylesheets="@application.css" text="Pyke" wrapText="true">
+                           <styleClass>
+                              <String fx:value="theironislands-territory-label" />
+                              <String fx:value="territory-label" />
+                           </styleClass></Button>
+                        <Label alignment="TOP_CENTER" cache="true" contentDisplay="TOP" depthTest="DISABLE" graphicTextGap="0.0" prefHeight="25.0" prefWidth="29.0" styleClass="territory-units-label" stylesheets="@application.css" text="5" textAlignment="CENTER" textFill="#ff6924" translateX="39.0" wrapText="true">
                            <font>
                               <Font name="Game of Thrones" size="13.0" />
                            </font>
                         </Label>
                      </children>
                   </Group>
-                  <Group accessibleRole="BUTTON" nodeOrientation="LEFT_TO_RIGHT" styleClass="thereach-territory-label" stylesheets="@application.css" translateX="-350.0" translateY="5.0">
+                  <Group accessibleRole="BUTTON" nodeOrientation="LEFT_TO_RIGHT" stylesheets="@application.css" translateX="-280.0" translateY="-125.0">
                      <children>
-                        <Button fx:id="button11112" mnemonicParsing="false" onAction="#printUnits" prefHeight="40.0" prefWidth="110.0" styleClass="theironislands-territory-label" stylesheets="@application.css" text="Pyke" wrapText="true" />
-                        <Label alignment="TOP_CENTER" cache="true" contentDisplay="TOP" depthTest="DISABLE" graphicTextGap="0.0" prefHeight="40.0" prefWidth="30.0" styleClass="territory-units-label" stylesheets="@application.css" text="5" textAlignment="CENTER" textFill="#ff6924" translateX="109.0" wrapText="true">
+                        <Button fx:id="button1111111" mnemonicParsing="false" onAction="#printUnits" prefHeight="25.0" prefWidth="100.0" stylesheets="@application.css" text="Cape Kraken" wrapText="true">
+                           <styleClass>
+                              <String fx:value="thenorth-territory-label" />
+                              <String fx:value="territory-label" />
+                           </styleClass></Button>
+                        <Label alignment="TOP_CENTER" cache="true" contentDisplay="CENTER" depthTest="DISABLE" graphicTextGap="0.0" prefHeight="25.0" prefWidth="29.0" styleClass="territory-units-label" stylesheets="@application.css" text="5" textAlignment="CENTER" textFill="#ff6924" translateX="99.0" wrapText="true">
+                           <font>
+                              <Font name="Game of Thrones" size="10.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <styleClass>
+                        <String fx:value="thereach-territory-label" />
+                        <String fx:value="territory-units-label-player1" />
+                     </styleClass>
+                  </Group>
+                  <Group accessibleRole="BUTTON" nodeOrientation="LEFT_TO_RIGHT" stylesheets="@application.css" translateX="-120.0" translateY="-250.0">
+                     <children>
+                        <Button fx:id="button11111111" mnemonicParsing="false" onAction="#printUnits" prefHeight="25.0" prefWidth="110.0" stylesheets="@application.css" text="Barrowlands" wrapText="true">
+                           <styleClass>
+                              <String fx:value="thenorth-territory-label" />
+                              <String fx:value="territory-label" />
+                           </styleClass></Button>
+                        <Label alignment="TOP_CENTER" cache="true" contentDisplay="CENTER" depthTest="DISABLE" graphicTextGap="0.0" prefHeight="25.0" prefWidth="29.0" styleClass="territory-units-label" stylesheets="@application.css" text="5" textAlignment="CENTER" textFill="#ff6924" translateX="109.0" wrapText="true">
+                           <font>
+                              <Font name="Game of Thrones" size="10.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <styleClass>
+                        <String fx:value="thereach-territory-label" />
+                        <String fx:value="territory-label" />
+                        <String fx:value="territory-units-label-player1" />
+                     </styleClass>
+                  </Group>
+                  <Group accessibleRole="BUTTON" nodeOrientation="LEFT_TO_RIGHT" stylesheets="@application.css" translateX="100.0" translateY="-230.0">
+                     <children>
+                        <Button fx:id="button111111111" mnemonicParsing="false" onAction="#printUnits" prefHeight="25.0" prefWidth="105.0" stylesheets="@application.css" text="White Harbor" wrapText="true">
+                           <styleClass>
+                              <String fx:value="thenorth-territory-label" />
+                              <String fx:value="territory-label" />
+                           </styleClass></Button>
+                        <Label alignment="TOP_CENTER" cache="true" contentDisplay="CENTER" depthTest="DISABLE" graphicTextGap="0.0" prefHeight="25.0" prefWidth="29.0" styleClass="territory-units-label" stylesheets="@application.css" text="5" textAlignment="CENTER" textFill="#ff6924" translateX="104.0" wrapText="true">
+                           <font>
+                              <Font name="Game of Thrones" size="10.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <styleClass>
+                        <String fx:value="thereach-territory-label" />
+                        <String fx:value="territory-label" />
+                        <String fx:value="territory-units-label-player1" />
+                     </styleClass>
+                  </Group>
+                  <Group accessibleRole="BUTTON" nodeOrientation="LEFT_TO_RIGHT" stylesheets="@application.css" translateX="-290.0" translateY="-280.0">
+                     <children>
+                        <Button fx:id="button111111112" mnemonicParsing="false" onAction="#printUnits" prefHeight="25.0" prefWidth="100.0" stylesheets="@application.css" text="Stoney Shore" wrapText="true">
+                           <styleClass>
+                              <String fx:value="thenorth-territory-label" />
+                              <String fx:value="territory-label" />
+                           </styleClass></Button>
+                        <Label alignment="TOP_CENTER" cache="true" contentDisplay="CENTER" depthTest="DISABLE" graphicTextGap="0.0" prefHeight="25.0" prefWidth="29.0" styleClass="territory-units-label" stylesheets="@application.css" text="5" textAlignment="CENTER" textFill="#ff6924" translateX="99.0" wrapText="true">
+                           <font>
+                              <Font name="Game of Thrones" size="10.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <styleClass>
+                        <String fx:value="thereach-territory-label" />
+                        <String fx:value="territory-units-label-player1" />
+                     </styleClass>
+                  </Group>
+                  <Group accessibleRole="BUTTON" nodeOrientation="LEFT_TO_RIGHT" stylesheets="@application.css" translateX="20.0" translateY="-350.0">
+                     <children>
+                        <Button fx:id="button1111111121" mnemonicParsing="false" onAction="#printUnits" prefHeight="25.0" prefWidth="80.0" stylesheets="@application.css" text="Winterfell" wrapText="true">
+                           <styleClass>
+                              <String fx:value="thenorth-territory-label" />
+                              <String fx:value="territory-label" />
+                           </styleClass></Button>
+                        <Label alignment="TOP_CENTER" cache="true" contentDisplay="CENTER" depthTest="DISABLE" graphicTextGap="0.0" prefHeight="25.0" prefWidth="29.0" styleClass="territory-units-label" stylesheets="@application.css" text="5" textAlignment="CENTER" textFill="#ff6924" translateX="79.0" wrapText="true">
+                           <font>
+                              <Font name="Game of Thrones" size="10.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <styleClass>
+                        <String fx:value="thereach-territory-label" />
+                        <String fx:value="territory-units-label-player1" />
+                     </styleClass>
+                  </Group>
+                  <Group accessibleRole="BUTTON" nodeOrientation="LEFT_TO_RIGHT" stylesheets="@application.css" translateX="-130.0" translateY="-400.0">
+                     <children>
+                        <Button fx:id="button11111111211" mnemonicParsing="false" onAction="#printUnits" prefHeight="25.0" prefWidth="100.0" stylesheets="@application.css" text="Wolfswood" wrapText="true">
+                           <styleClass>
+                              <String fx:value="thenorth-territory-label" />
+                              <String fx:value="territory-label" />
+                           </styleClass></Button>
+                        <Label alignment="TOP_CENTER" cache="true" contentDisplay="CENTER" depthTest="DISABLE" graphicTextGap="0.0" prefHeight="25.0" prefWidth="29.0" styleClass="territory-units-label" stylesheets="@application.css" text="5" textAlignment="CENTER" textFill="#ff6924" translateX="99.0" wrapText="true">
+                           <font>
+                              <Font name="Game of Thrones" size="10.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <styleClass>
+                        <String fx:value="thereach-territory-label" />
+                        <String fx:value="territory-units-label-player1" />
+                     </styleClass>
+                  </Group>
+                  <Group accessibleRole="BUTTON" nodeOrientation="LEFT_TO_RIGHT" stylesheets="@application.css" translateX="100.0" translateY="-590.0">
+                     <children>
+                        <Button fx:id="button111111112111" mnemonicParsing="false" onAction="#printUnits" prefHeight="25.0" prefWidth="60.0" stylesheets="@application.css" text="The Gift" wrapText="true">
+                           <styleClass>
+                              <String fx:value="thenorth-territory-label" />
+                              <String fx:value="territory-label" />
+                           </styleClass></Button>
+                        <Label alignment="TOP_CENTER" cache="true" contentDisplay="CENTER" depthTest="DISABLE" graphicTextGap="0.0" prefHeight="25.0" prefWidth="29.0" styleClass="territory-units-label" stylesheets="@application.css" text="5" textAlignment="CENTER" textFill="#ff6924" translateX="59.0" wrapText="true">
+                           <font>
+                              <Font name="Game of Thrones" size="10.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <styleClass>
+                        <String fx:value="thereach-territory-label" />
+                        <String fx:value="territory-units-label-player1" />
+                     </styleClass>
+                  </Group>
+                  <Group accessibleRole="BUTTON" nodeOrientation="LEFT_TO_RIGHT" stylesheets="@application.css" translateX="230.0" translateY="-500.0">
+                     <children>
+                        <Button fx:id="button1111111121111" mnemonicParsing="false" onAction="#printUnits" prefHeight="25.0" prefWidth="80.0" stylesheets="@application.css" text="Karhold" wrapText="true">
+                           <styleClass>
+                              <String fx:value="thenorth-territory-label" />
+                              <String fx:value="territory-label" />
+                           </styleClass></Button>
+                        <Label alignment="TOP_CENTER" cache="true" contentDisplay="CENTER" depthTest="DISABLE" graphicTextGap="0.0" prefHeight="25.0" prefWidth="29.0" styleClass="territory-units-label" stylesheets="@application.css" text="5" textAlignment="CENTER" textFill="#ff6924" translateX="79.0" wrapText="true">
+                           <font>
+                              <Font name="Game of Thrones" size="10.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <styleClass>
+                        <String fx:value="thereach-territory-label" />
+                        <String fx:value="territory-units-label-player1" />
+                     </styleClass>
+                  </Group>
+                  <Group accessibleRole="BUTTON" nodeOrientation="LEFT_TO_RIGHT" stylesheets="@application.css" translateX="290.0" translateY="-620.0">
+                     <children>
+                        <Button fx:id="button11111111211111" mnemonicParsing="false" onAction="#printUnits" prefHeight="25.0" prefWidth="60.0" stylesheets="@application.css" text="Skagos" wrapText="true">
+                           <styleClass>
+                              <String fx:value="thenorth-territory-label" />
+                              <String fx:value="territory-label" />
+                           </styleClass></Button>
+                        <Label alignment="TOP_CENTER" cache="true" contentDisplay="CENTER" depthTest="DISABLE" graphicTextGap="0.0" prefHeight="25.0" prefWidth="29.0" styleClass="territory-units-label" stylesheets="@application.css" text="5" textAlignment="CENTER" textFill="#ff6924" translateX="59.0" wrapText="true">
+                           <font>
+                              <Font name="Game of Thrones" size="10.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <styleClass>
+                        <String fx:value="thereach-territory-label" />
+                        <String fx:value="territory-units-label-player1" />
+                     </styleClass>
+                  </Group>
+                  <Group accessibleRole="BUTTON" nodeOrientation="LEFT_TO_RIGHT" stylesheets="@application.css" translateX="140.0" translateY="-430.0">
+                     <children>
+                        <Button fx:id="button1111111111" mnemonicParsing="false" onAction="#printUnits" prefHeight="25.0" prefWidth="110.0" stylesheets="@application.css" text="The Dreadfort" wrapText="true">
+                           <styleClass>
+                              <String fx:value="thenorth-territory-label" />
+                              <String fx:value="territory-label" />
+                           </styleClass></Button>
+                        <Label alignment="TOP_CENTER" cache="true" contentDisplay="CENTER" depthTest="DISABLE" graphicTextGap="0.0" prefHeight="25.0" prefWidth="29.0" styleClass="territory-units-label" stylesheets="@application.css" text="5" textAlignment="CENTER" textFill="#ff6924" translateX="109.0" wrapText="true">
+                           <font>
+                              <Font name="Game of Thrones" size="10.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <styleClass>
+                        <String fx:value="thereach-territory-label" />
+                        <String fx:value="territory-units-label-player1" />
+                     </styleClass>
+                  </Group>
+                  <Group accessibleRole="BUTTON" nodeOrientation="LEFT_TO_RIGHT" stylesheets="@application.css" translateX="170.0" translateY="-340.0">
+                     <children>
+                        <Button fx:id="button11111111111" mnemonicParsing="false" onAction="#printUnits" prefHeight="25.0" prefWidth="120.0" stylesheets="@application.css" text="Widow's Watch" wrapText="true">
+                           <styleClass>
+                              <String fx:value="thenorth-territory-label" />
+                              <String fx:value="territory-label" />
+                           </styleClass></Button>
+                        <Label alignment="TOP_CENTER" cache="true" contentDisplay="CENTER" depthTest="DISABLE" graphicTextGap="0.0" prefHeight="25.0" prefWidth="29.0" styleClass="territory-units-label" stylesheets="@application.css" text="5" textAlignment="CENTER" textFill="#ff6924" translateX="119.0" wrapText="true">
+                           <font>
+                              <Font name="Game of Thrones" size="10.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <styleClass>
+                        <String fx:value="thereach-territory-label" />
+                        <String fx:value="territory-units-label-player1" />
+                     </styleClass>
+                  </Group>
+                  <Group accessibleRole="BUTTON" nodeOrientation="LEFT_TO_RIGHT" stylesheets="@application.css" translateX="-150.0" translateY="-550.0">
+                     <children>
+                        <Button fx:id="button111111111111" mnemonicParsing="false" onAction="#printUnits" prefHeight="25.0" prefWidth="85.0" stylesheets="@application.css" text="Bear Island" wrapText="true">
+                           <styleClass>
+                              <String fx:value="thenorth-territory-label" />
+                              <String fx:value="territory-label" />
+                           </styleClass></Button>
+                        <Label alignment="TOP_CENTER" cache="true" contentDisplay="CENTER" depthTest="DISABLE" graphicTextGap="0.0" prefHeight="25.0" prefWidth="29.0" styleClass="territory-units-label" stylesheets="@application.css" text="5" textAlignment="CENTER" textFill="#ff6924" translateX="84.0" wrapText="true">
+                           <font>
+                              <Font name="Game of Thrones" size="10.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <styleClass>
+                        <String fx:value="thereach-territory-label" />
+                        <String fx:value="territory-units-label-player1" />
+                     </styleClass>
+                  </Group>
+                  <Group accessibleRole="BUTTON" nodeOrientation="LEFT_TO_RIGHT" styleClass="thereach-territory-label" stylesheets="@application.css" translateX="-190.0" translateY="10.0">
+                     <children>
+                        <Button fx:id="button111121" mnemonicParsing="false" onAction="#printUnits" prefHeight="25.0" prefWidth="70.0" stylesheets="@application.css" text="Harlaw" wrapText="true">
+                           <styleClass>
+                              <String fx:value="theironislands-territory-label" />
+                              <String fx:value="territory-label" />
+                           </styleClass></Button>
+                        <Label alignment="TOP_CENTER" cache="true" contentDisplay="TOP" depthTest="DISABLE" graphicTextGap="0.0" prefHeight="25.0" prefWidth="29.0" styleClass="territory-units-label" stylesheets="@application.css" text="5" textAlignment="CENTER" textFill="#ff6924" translateX="69.0" wrapText="true">
+                           <font>
+                              <Font name="Game of Thrones" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Group>
+                  <Group accessibleRole="BUTTON" nodeOrientation="LEFT_TO_RIGHT" styleClass="thereach-territory-label" stylesheets="@application.css" translateX="-65.0" translateY="-55.0">
+                     <children>
+                        <Button fx:id="button1111211" mnemonicParsing="false" onAction="#printUnits" prefHeight="25.0" prefWidth="70.0" stylesheets="@application.css" text="The Neck" wrapText="true">
+                           <styleClass>
+                              <String fx:value="theriverlands-territory-label" />
+                              <String fx:value="territory-label" />
+                           </styleClass></Button>
+                        <Label alignment="TOP_CENTER" cache="true" contentDisplay="TOP" depthTest="DISABLE" graphicTextGap="0.0" prefHeight="25.0" prefWidth="29.0" styleClass="territory-units-label" stylesheets="@application.css" text="5" textAlignment="CENTER" textFill="#ff6924" translateX="69.0" wrapText="true">
+                           <font>
+                              <Font name="Game of Thrones" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Group>
+                  <Group accessibleRole="BUTTON" nodeOrientation="LEFT_TO_RIGHT" styleClass="thereach-territory-label" stylesheets="@application.css" translateX="-20.0" translateY="20.0">
+                     <children>
+                        <Button fx:id="button11112111" mnemonicParsing="false" onAction="#printUnits" prefHeight="25.0" prefWidth="90.0" stylesheets="@application.css" text="The Trident" wrapText="true">
+                           <styleClass>
+                              <String fx:value="theriverlands-territory-label" />
+                              <String fx:value="territory-label" />
+                           </styleClass></Button>
+                        <Label alignment="TOP_CENTER" cache="true" contentDisplay="TOP" depthTest="DISABLE" graphicTextGap="0.0" prefHeight="25.0" prefWidth="29.0" styleClass="territory-units-label" stylesheets="@application.css" text="5" textAlignment="CENTER" textFill="#ff6924" translateX="89.0" wrapText="true">
+                           <font>
+                              <Font name="Game of Thrones" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Group>
+                  <Group accessibleRole="BUTTON" nodeOrientation="LEFT_TO_RIGHT" styleClass="thereach-territory-label" stylesheets="@application.css" translateX="-65.0" translateY="110.0">
+                     <children>
+                        <Button fx:id="button111121111" mnemonicParsing="false" onAction="#printUnits" prefHeight="25.0" prefWidth="80.0" stylesheets="@application.css" text="Riverrun" wrapText="true">
+                           <styleClass>
+                              <String fx:value="theriverlands-territory-label" />
+                              <String fx:value="territory-label" />
+                           </styleClass></Button>
+                        <Label alignment="TOP_CENTER" cache="true" contentDisplay="TOP" depthTest="DISABLE" graphicTextGap="0.0" prefHeight="25.0" prefWidth="29.0" styleClass="territory-units-label" stylesheets="@application.css" text="5" textAlignment="CENTER" textFill="#ff6924" translateX="79.0" wrapText="true">
+                           <font>
+                              <Font name="Game of Thrones" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Group>
+                  <Group accessibleRole="BUTTON" nodeOrientation="LEFT_TO_RIGHT" styleClass="thereach-territory-label" stylesheets="@application.css" translateX="-70.0" translateY="180.0">
+                     <children>
+                        <Button fx:id="button1111211111" mnemonicParsing="false" onAction="#printUnits" prefHeight="25.0" prefWidth="80.0" stylesheets="@application.css" text="Stoney Sept" wrapText="true">
+                           <styleClass>
+                              <String fx:value="theriverlands-territory-label" />
+                              <String fx:value="territory-label" />
+                           </styleClass></Button>
+                        <Label alignment="TOP_CENTER" cache="true" contentDisplay="TOP" depthTest="DISABLE" graphicTextGap="0.0" prefHeight="25.0" prefWidth="29.0" styleClass="territory-units-label" stylesheets="@application.css" text="5" textAlignment="CENTER" textFill="#ff6924" translateX="79.0" wrapText="true">
+                           <font>
+                              <Font name="Game of Thrones" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Group>
+                  <Group accessibleRole="BUTTON" nodeOrientation="LEFT_TO_RIGHT" styleClass="thereach-territory-label" stylesheets="@application.css" translateX="-170.0" translateY="70.0">
+                     <children>
+                        <Button fx:id="button11113" mnemonicParsing="false" onAction="#printUnits" prefHeight="25.0" prefWidth="70.0" stylesheets="@application.css" text="The Crag" wrapText="true">
+                           <styleClass>
+                              <String fx:value="thewesterlands-territory-label" />
+                              <String fx:value="territory-label" />
+                           </styleClass></Button>
+                        <Label alignment="TOP_CENTER" cache="true" contentDisplay="TOP" depthTest="DISABLE" graphicTextGap="0.0" prefHeight="25.0" prefWidth="30.0" styleClass="territory-units-label" stylesheets="@application.css" text="5" textAlignment="CENTER" textFill="#ff6924" translateX="69.0" wrapText="true">
+                           <font>
+                              <Font name="Game of Thrones" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Group>
+                  <Group accessibleRole="BUTTON" nodeOrientation="LEFT_TO_RIGHT" styleClass="thereach-territory-label" stylesheets="@application.css" translateX="-160.0" translateY="140.0">
+                     <children>
+                        <Button fx:id="button111131" mnemonicParsing="false" onAction="#printUnits" prefHeight="25.0" prefWidth="105.0" stylesheets="@application.css" text="Golden Tooth" wrapText="true">
+                           <styleClass>
+                              <String fx:value="thewesterlands-territory-label" />
+                              <String fx:value="territory-label" />
+                           </styleClass></Button>
+                        <Label alignment="TOP_CENTER" cache="true" contentDisplay="TOP" depthTest="DISABLE" graphicTextGap="0.0" prefHeight="25.0" prefWidth="30.0" styleClass="territory-units-label" stylesheets="@application.css" text="5" textAlignment="CENTER" textFill="#ff6924" translateX="104.0" wrapText="true">
+                           <font>
+                              <Font name="Game of Thrones" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Group>
+                  <Group accessibleRole="BUTTON" nodeOrientation="LEFT_TO_RIGHT" styleClass="thereach-territory-label" stylesheets="@application.css" translateX="-230.0" translateY="190.0">
+                     <children>
+                        <Button fx:id="button1111311" mnemonicParsing="false" onAction="#printUnits" prefHeight="25.0" prefWidth="105.0" stylesheets="@application.css" text="Casterly Rock" wrapText="true">
+                           <styleClass>
+                              <String fx:value="thewesterlands-territory-label" />
+                              <String fx:value="territory-label" />
+                           </styleClass></Button>
+                        <Label alignment="TOP_CENTER" cache="true" contentDisplay="TOP" depthTest="DISABLE" graphicTextGap="0.0" prefHeight="25.0" prefWidth="30.0" styleClass="territory-units-label" stylesheets="@application.css" text="5" textAlignment="CENTER" textFill="#ff6924" translateX="104.0" wrapText="true">
+                           <font>
+                              <Font name="Game of Thrones" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Group>
+                  <Group accessibleRole="BUTTON" nodeOrientation="LEFT_TO_RIGHT" styleClass="thereach-territory-label" stylesheets="@application.css" translateX="-270.0" translateY="270.0">
+                     <children>
+                        <Button fx:id="button11113111" mnemonicParsing="false" onAction="#printUnits" prefHeight="25.0" prefWidth="105.0" stylesheets="@application.css" text="Crakenhall" wrapText="true">
+                           <styleClass>
+                              <String fx:value="thewesterlands-territory-label" />
+                              <String fx:value="territory-label" />
+                           </styleClass></Button>
+                        <Label alignment="TOP_CENTER" cache="true" contentDisplay="TOP" depthTest="DISABLE" graphicTextGap="0.0" prefHeight="25.0" prefWidth="30.0" styleClass="territory-units-label" stylesheets="@application.css" text="5" textAlignment="CENTER" textFill="#ff6924" translateX="104.0" wrapText="true">
+                           <font>
+                              <Font name="Game of Thrones" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Group>
+                  <Group accessibleRole="BUTTON" nodeOrientation="LEFT_TO_RIGHT" styleClass="thereach-territory-label" stylesheets="@application.css" translateX="-210.0" translateY="345.0">
+                     <children>
+                        <Button fx:id="button1112" mnemonicParsing="false" onAction="#printUnits" prefHeight="25.0" prefWidth="130.0" stylesheets="@application.css" text="Searoad Marshes" wrapText="true">
+                           <styleClass>
+                              <String fx:value="thereach-territory-label" />
+                              <String fx:value="territory-label" />
+                           </styleClass></Button>
+                        <Label alignment="TOP_CENTER" cache="true" contentDisplay="TOP" depthTest="DISABLE" graphicTextGap="0.0" prefHeight="25.0" prefWidth="30.0" styleClass="territory-units-label" stylesheets="@application.css" text="5" textAlignment="CENTER" textFill="#ff6924" translateX="129.0" wrapText="true">
+                           <font>
+                              <Font name="Game of Thrones" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Group>
+                  <Group accessibleRole="BUTTON" nodeOrientation="LEFT_TO_RIGHT" styleClass="thereach-territory-label" stylesheets="@application.css" translateX="-150.0" translateY="430.0">
+                     <children>
+                        <Button fx:id="button11121" mnemonicParsing="false" onAction="#printUnits" prefHeight="25.0" prefWidth="100.0" stylesheets="@application.css" text="Highgarden" wrapText="true">
+                           <styleClass>
+                              <String fx:value="thereach-territory-label" />
+                              <String fx:value="territory-label" />
+                           </styleClass></Button>
+                        <Label alignment="TOP_CENTER" cache="true" contentDisplay="TOP" depthTest="DISABLE" graphicTextGap="0.0" prefHeight="25.0" prefWidth="30.0" styleClass="territory-units-label" stylesheets="@application.css" text="5" textAlignment="CENTER" textFill="#ff6924" translateX="99.0" wrapText="true">
+                           <font>
+                              <Font name="Game of Thrones" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Group>
+                  <Group accessibleRole="BUTTON" nodeOrientation="LEFT_TO_RIGHT" styleClass="thereach-territory-label" stylesheets="@application.css" translateX="-20.0" translateY="370.0">
+                     <children>
+                        <Button fx:id="button111211" mnemonicParsing="false" onAction="#printUnits" prefHeight="25.0" prefWidth="90.0" stylesheets="@application.css" text="The Mander" wrapText="true">
+                           <styleClass>
+                              <String fx:value="thereach-territory-label" />
+                              <String fx:value="territory-label" />
+                           </styleClass></Button>
+                        <Label alignment="TOP_CENTER" cache="true" contentDisplay="TOP" depthTest="DISABLE" graphicTextGap="0.0" prefHeight="25.0" prefWidth="30.0" styleClass="territory-units-label" stylesheets="@application.css" text="5" textAlignment="CENTER" textFill="#ff6924" translateX="89.0" wrapText="true">
+                           <font>
+                              <Font name="Game of Thrones" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Group>
+                  <Group accessibleRole="BUTTON" nodeOrientation="LEFT_TO_RIGHT" styleClass="thereach-territory-label" stylesheets="@application.css" translateX="210.0" translateY="130.0">
+                     <children>
+                        <Button fx:id="button1111122" mnemonicParsing="false" onAction="#printUnits" prefHeight="25.0" prefWidth="130.0" stylesheets="@application.css" text="Crackclaw Point" wrapText="true">
+                           <styleClass>
+                              <String fx:value="thecrownlands-territory-label" />
+                              <String fx:value="territory-label" />
+                           </styleClass></Button>
+                        <Label alignment="TOP_CENTER" cache="true" contentDisplay="TOP" depthTest="DISABLE" graphicTextGap="0.0" prefHeight="25.0" prefWidth="30.0" styleClass="territory-units-label" stylesheets="@application.css" text="5" textAlignment="CENTER" textFill="#ff6924" translateX="129.0" wrapText="true">
+                           <font>
+                              <Font name="Game of Thrones" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Group>
+                  <Group accessibleRole="BUTTON" nodeOrientation="LEFT_TO_RIGHT" styleClass="thereach-territory-label" stylesheets="@application.css" translateX="290.0" translateY="178.0">
+                     <children>
+                        <Button fx:id="button11111221" mnemonicParsing="false" onAction="#printUnits" prefHeight="25.0" prefWidth="110.0" stylesheets="@application.css" text="Dragonstone" wrapText="true">
+                           <styleClass>
+                              <String fx:value="thecrownlands-territory-label" />
+                              <String fx:value="territory-label" />
+                           </styleClass></Button>
+                        <Label alignment="TOP_CENTER" cache="true" contentDisplay="TOP" depthTest="DISABLE" graphicTextGap="0.0" prefHeight="25.0" prefWidth="30.0" styleClass="territory-units-label" stylesheets="@application.css" text="5" textAlignment="CENTER" textFill="#ff6924" translateX="109.0" wrapText="true">
+                           <font>
+                              <Font name="Game of Thrones" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Group>
+                  <Group accessibleRole="BUTTON" nodeOrientation="LEFT_TO_RIGHT" styleClass="thereach-territory-label" stylesheets="@application.css" translateX="140.0" translateY="295.0">
+                     <children>
+                        <Button fx:id="button111112211" mnemonicParsing="false" onAction="#printUnits" prefHeight="25.0" prefWidth="90.0" stylesheets="@application.css" text="Kingswood" wrapText="true">
+                           <styleClass>
+                              <String fx:value="thecrownlands-territory-label" />
+                              <String fx:value="territory-label" />
+                           </styleClass></Button>
+                        <Label alignment="TOP_CENTER" cache="true" contentDisplay="TOP" depthTest="DISABLE" graphicTextGap="0.0" prefHeight="25.0" prefWidth="30.0" styleClass="territory-units-label" stylesheets="@application.css" text="5" textAlignment="CENTER" textFill="#ff6924" translateX="89.0" wrapText="true">
+                           <font>
+                              <Font name="Game of Thrones" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Group>
+                  <Group accessibleRole="BUTTON" nodeOrientation="LEFT_TO_RIGHT" styleClass="thereach-territory-label" stylesheets="@application.css" translateX="50.0" translateY="435.0">
+                     <children>
+                        <Button fx:id="button11111211" mnemonicParsing="false" onAction="#printUnits" prefHeight="25.0" prefWidth="130.0" stylesheets="@application.css" text="Dornish Marches" wrapText="true">
+                           <styleClass>
+                              <String fx:value="thestormlands-territory-label" />
+                              <String fx:value="territory-label" />
+                           </styleClass></Button>
+                        <Label alignment="TOP_CENTER" cache="true" contentDisplay="TOP" depthTest="DISABLE" graphicTextGap="0.0" prefHeight="25.0" prefWidth="30.0" styleClass="territory-units-label" stylesheets="@application.css" text="5" textAlignment="CENTER" textFill="#ff6924" translateX="129.0" wrapText="true">
+                           <font>
+                              <Font name="Game of Thrones" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Group>
+                  <Group accessibleRole="BUTTON" nodeOrientation="LEFT_TO_RIGHT" styleClass="thereach-territory-label" stylesheets="@application.css" translateX="200.0" translateY="450.0">
+                     <children>
+                        <Button fx:id="button111112111" mnemonicParsing="false" onAction="#printUnits" prefHeight="25.0" prefWidth="90.0" stylesheets="@application.css" text="Rainwood" wrapText="true">
+                           <styleClass>
+                              <String fx:value="thestormlands-territory-label" />
+                              <String fx:value="territory-label" />
+                           </styleClass></Button>
+                        <Label alignment="TOP_CENTER" cache="true" contentDisplay="TOP" depthTest="DISABLE" graphicTextGap="0.0" prefHeight="25.0" prefWidth="30.0" styleClass="territory-units-label" stylesheets="@application.css" text="5" textAlignment="CENTER" textFill="#ff6924" translateX="89.0" wrapText="true">
+                           <font>
+                              <Font name="Game of Thrones" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Group>
+                  <Group accessibleRole="BUTTON" nodeOrientation="LEFT_TO_RIGHT" styleClass="thereach-territory-label" stylesheets="@application.css" translateX="330.0" translateY="360.0">
+                     <children>
+                        <Button fx:id="button1111121111" mnemonicParsing="false" onAction="#printUnits" prefHeight="25.0" prefWidth="60.0" stylesheets="@application.css" text="Tarth" wrapText="true">
+                           <styleClass>
+                              <String fx:value="thestormlands-territory-label" />
+                              <String fx:value="territory-label" />
+                           </styleClass></Button>
+                        <Label alignment="TOP_CENTER" cache="true" contentDisplay="TOP" depthTest="DISABLE" graphicTextGap="0.0" prefHeight="25.0" prefWidth="30.0" styleClass="territory-units-label" stylesheets="@application.css" text="5" textAlignment="CENTER" textFill="#ff6924" translateX="59.0" wrapText="true">
+                           <font>
+                              <Font name="Game of Thrones" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Group>
+                  <Group accessibleRole="BUTTON" nodeOrientation="LEFT_TO_RIGHT" stylesheets="@application.css" translateX="-70.0" translateY="520.0">
+                     <children>
+                        <Button fx:id="button112" mnemonicParsing="false" onAction="#printUnits" prefHeight="25.0" prefWidth="110.0" stylesheets="@application.css" text="Red Mountains" wrapText="true">
+                           <styleClass>
+                              <String fx:value="dorne-territory-label" />
+                              <String fx:value="territory-label" />
+                           </styleClass></Button>
+                        <Label alignment="TOP_CENTER" cache="true" contentDisplay="TOP" depthTest="DISABLE" graphicTextGap="0.0" prefHeight="25.0" prefWidth="30.0" styleClass="territory-units-label" stylesheets="@application.css" text="5" textAlignment="CENTER" textFill="#ff6924" translateX="109.0" wrapText="true">
+                           <font>
+                              <Font name="Game of Thrones" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Group>
+                  <Group accessibleRole="BUTTON" nodeOrientation="LEFT_TO_RIGHT" stylesheets="@application.css" translateX="-80.0" translateY="650.0">
+                     <children>
+                        <Button fx:id="button1121" mnemonicParsing="false" onAction="#printUnits" prefHeight="25.0" prefWidth="80.0" stylesheets="@application.css" text="Sandstone" wrapText="true">
+                           <styleClass>
+                              <String fx:value="dorne-territory-label" />
+                              <String fx:value="territory-label" />
+                           </styleClass></Button>
+                        <Label alignment="TOP_CENTER" cache="true" contentDisplay="TOP" depthTest="DISABLE" graphicTextGap="0.0" prefHeight="25.0" prefWidth="30.0" styleClass="territory-units-label" stylesheets="@application.css" text="5" textAlignment="CENTER" textFill="#ff6924" translateX="79.0" wrapText="true">
+                           <font>
+                              <Font name="Game of Thrones" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Group>
+                  <Group accessibleRole="BUTTON" nodeOrientation="LEFT_TO_RIGHT" stylesheets="@application.css" translateX="230.0" translateY="595.0">
+                     <children>
+                        <Button fx:id="button11211" mnemonicParsing="false" onAction="#printUnits" prefHeight="25.0" prefWidth="80.0" stylesheets="@application.css" text="Sunspear" wrapText="true">
+                           <styleClass>
+                              <String fx:value="dorne-territory-label" />
+                              <String fx:value="territory-label" />
+                           </styleClass></Button>
+                        <Label alignment="TOP_CENTER" cache="true" contentDisplay="TOP" depthTest="DISABLE" graphicTextGap="0.0" prefHeight="25.0" prefWidth="30.0" styleClass="territory-units-label" stylesheets="@application.css" text="5" textAlignment="CENTER" textFill="#ff6924" translateX="79.0" wrapText="true">
+                           <font>
+                              <Font name="Game of Thrones" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Group>
+                  <Group accessibleRole="BUTTON" nodeOrientation="LEFT_TO_RIGHT" styleClass="thereach-territory-label" stylesheets="@application.css" translateX="-280.0" translateY="490.0">
+                     <children>
+                        <Button fx:id="button111212" mnemonicParsing="false" onAction="#printUnits" prefHeight="25.0" prefWidth="80.0" stylesheets="@application.css" text="Oldtown" wrapText="true">
+                           <styleClass>
+                              <String fx:value="thereach-territory-label" />
+                              <String fx:value="territory-label" />
+                           </styleClass></Button>
+                        <Label alignment="TOP_CENTER" cache="true" contentDisplay="TOP" depthTest="DISABLE" graphicTextGap="0.0" prefHeight="25.0" prefWidth="30.0" styleClass="territory-units-label" stylesheets="@application.css" text="5" textAlignment="CENTER" textFill="#ff6924" translateX="79.0" wrapText="true">
+                           <font>
+                              <Font name="Game of Thrones" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Group>
+                  <Group accessibleRole="BUTTON" nodeOrientation="LEFT_TO_RIGHT" styleClass="thereach-territory-label" stylesheets="@application.css" translateX="-285.0" translateY="585.0">
+                     <children>
+                        <Button fx:id="button1112121" mnemonicParsing="false" onAction="#printUnits" prefHeight="25.0" prefWidth="100.0" stylesheets="@application.css" text="Three Towers" wrapText="true">
+                           <styleClass>
+                              <String fx:value="thereach-territory-label" />
+                              <String fx:value="territory-label" />
+                           </styleClass></Button>
+                        <Label alignment="TOP_CENTER" cache="true" contentDisplay="TOP" depthTest="DISABLE" graphicTextGap="0.0" prefHeight="25.0" prefWidth="30.0" styleClass="territory-units-label" stylesheets="@application.css" text="5" textAlignment="CENTER" textFill="#ff6924" translateX="99.0" wrapText="true">
+                           <font>
+                              <Font name="Game of Thrones" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Group>
+                  <Group accessibleRole="BUTTON" nodeOrientation="LEFT_TO_RIGHT" styleClass="thereach-territory-label" stylesheets="@application.css" translateX="-310.0" translateY="650.0">
+                     <children>
+                        <Button fx:id="button1112122" mnemonicParsing="false" onAction="#printUnits" prefHeight="25.0" prefWidth="80.0" stylesheets="@application.css" text="Oldtown" wrapText="true">
+                           <styleClass>
+                              <String fx:value="thereach-territory-label" />
+                              <String fx:value="territory-label" />
+                           </styleClass></Button>
+                        <Label alignment="TOP_CENTER" cache="true" contentDisplay="TOP" depthTest="DISABLE" graphicTextGap="0.0" prefHeight="25.0" prefWidth="30.0" styleClass="territory-units-label" stylesheets="@application.css" text="5" textAlignment="CENTER" textFill="#ff6924" translateX="79.0" wrapText="true">
                            <font>
                               <Font name="Game of Thrones" size="13.0" />
                            </font>
@@ -189,4 +793,30 @@
    			</content>
 		</ScrollPane>
 	</center>
+   <top>
+      <HBox alignment="CENTER_RIGHT" prefHeight="20.0" style="-fx-background-color: #383838;" BorderPane.alignment="CENTER_RIGHT">
+         <children>
+            <Label styleClass="app-header-name" text="Game of Thrones - Risk">
+               <font>
+                  <Font name="Game of Thrones" size="12.0" />
+               </font>
+            </Label>
+            <Pane prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+            <ImageView id="close-button" fitHeight="20.0" fitWidth="20.0" onMouseClicked="#close" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/close-button.png" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </ImageView>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+   </top>
 </BorderPane>

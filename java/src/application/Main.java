@@ -3,9 +3,11 @@ package application;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.text.Font;
 
 
 public class Main extends Application {
@@ -19,6 +21,7 @@ public class Main extends Application {
 			window.setTitle("Game of Thrones - Risk");
 			
 			window.setScene(scene);
+			window.initStyle(StageStyle.TRANSPARENT);
 			window.show();
 		} catch(Exception e) {
 			e.printStackTrace();
