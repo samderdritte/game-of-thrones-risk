@@ -21,13 +21,26 @@
 			<padding>
 				<Insets bottom="10" left="10" right="10" top="10" />
 			</padding>
+         <HBox>
+            <children>
+      		    
+      		    <Label text="Name of Player">
+                  <HBox.margin>
+                     <Insets />
+                  </HBox.margin>
+               </Label>
+               <Label fx:id="playerNameNumber" text="1">
+                  <HBox.margin>
+                     <Insets left="5.0" />
+                  </HBox.margin>
+               </Label>
+            </children>
+         </HBox>
 		    
-		    <Label text="How many Player are playing?" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="0" />
-		    
-		    <TextField fx:id="numPlayers" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="1" />
-         	<Label id="validationMessage" fx:id="numPlayersValidationMessage" stylesheets="@application.css" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="2" />
+		    <TextField fx:id="playerName" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="1" />
+         <Label id="validationMessage" fx:id="namePlayersValidationMessage" stylesheets="@application.css" GridPane.rowIndex="2" />
 		    	
-		    <Button fx:id="playerSelectButton" onAction="#selectPlayer" text="Continue" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="3" />
+		    <Button fx:id="playerNameButton" onAction="#namePlayer" text="Save and continue" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="3" />
          <columnConstraints>
             <ColumnConstraints />
             <ColumnConstraints />

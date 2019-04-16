@@ -48,6 +48,11 @@ Button:hover {
 }
 
 
+#validationMessage {
+	-fx-text-fill: #ac3939;
+	-fx-font-size: 10pt;
+}
+
 .territory-label, .dorne-territory-label, 
 .thereach-territory-label, .thewesterlands-territory-label,
 .theriverlands-territory-label, .thenorth-territory-label,

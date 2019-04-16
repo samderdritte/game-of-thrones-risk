@@ -22,9 +22,9 @@
 	<left>
 		<HBox prefHeight="700.0">
    			<children>
-   			<VBox maxWidth="200.0" prefWidth="200.0">
+   			<VBox fx:id="playerStatsBox" maxWidth="200.0" prefWidth="200.0">
       		<children>
-      			<Text fill="#ffffff00" smooth="false" stroke="#da7b7b" text="Player 1">
+      			<Text fx:id="player1NameLabel" fill="#ffffff00" smooth="false" stroke="#da7b7b" text="Player 1">
                      <VBox.margin>
                         <Insets />
                      </VBox.margin>
@@ -45,7 +45,7 @@
                         <Text fill="WHITE" text="Total Units:" BorderPane.alignment="CENTER" />
                      </left>
                   </BorderPane>
-                  <Text fill="#ffffff00" smooth="false" stroke="#d9b97c" text="Player 2" textAlignment="CENTER" />
+                  <Text fx:id="player2NameLabel" fill="#ffffff00" smooth="false" stroke="#d9b97c" text="Player 2" textAlignment="CENTER" />
                   <BorderPane>
                      <left>
                         <Text fill="WHITE" text="Number of Territories:" BorderPane.alignment="CENTER" />
@@ -62,7 +62,7 @@
                         <Text fill="WHITE" text="Total Units:" BorderPane.alignment="CENTER" />
                      </left>
                   </BorderPane>
-                  <Text fill="#ffffff00" smooth="false" stroke="#9cd97c" text="Player 3" textAlignment="CENTER" />
+                  <Text fx:id="plyer3NameLabel" fill="#ffffff00" smooth="false" stroke="#9cd97c" text="Player 3" textAlignment="CENTER" />
                   <BorderPane>
                      <left>
                         <Text fill="WHITE" text="Number of Territories:" BorderPane.alignment="CENTER" />
@@ -79,7 +79,7 @@
                         <Text fill="WHITE" text="Total Units:" BorderPane.alignment="CENTER" />
                      </left>
                   </BorderPane>
-                  <Text fill="#ffffff00" smooth="false" stroke="#7cb6d9" text="Player 4" textAlignment="CENTER" />
+                  <Text fx:id="player4NameLabel" fill="#ffffff00" smooth="false" stroke="#7cb6d9" text="Player 4" textAlignment="CENTER" />
                   <BorderPane>
                      <left>
                         <Text fill="WHITE" text="Number of Territories:" BorderPane.alignment="CENTER" />
@@ -96,7 +96,7 @@
                         <Text fill="WHITE" text="Total Units:" BorderPane.alignment="CENTER" />
                      </left>
                   </BorderPane>
-                  <Text fill="#ffffff00" smooth="false" stroke="#9380d9" text="Player 5" textAlignment="CENTER" />
+                  <Text fx:id="player5NameLabel" fill="#ffffff00" smooth="false" stroke="#9380d9" text="Player 5" textAlignment="CENTER" />
                   <BorderPane>
                      <left>
                         <Text fill="WHITE" text="Number of Territories:" BorderPane.alignment="CENTER" />
@@ -113,7 +113,7 @@
                         <Text fill="WHITE" text="Total Units:" BorderPane.alignment="CENTER" />
                      </left>
                   </BorderPane>
-                  <Text fill="#ffffff00" smooth="false" stroke="#cd80d9" text="Player 6" textAlignment="CENTER" />
+                  <Text fx:id="player6NameLabel" fill="#ffffff00" smooth="false" stroke="#cd80d9" text="Player 6" textAlignment="CENTER" />
                   <BorderPane>
                      <left>
                         <Text fill="WHITE" text="Number of Territories:" BorderPane.alignment="CENTER" />
@@ -895,7 +895,7 @@
                   <Font name="Game of Thrones" size="12.0" />
                </font>
                <HBox.margin>
-                  <Insets left="10.0" />
+                  <Insets left="20.0" />
                </HBox.margin>
             </Label>
             <Pane prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
