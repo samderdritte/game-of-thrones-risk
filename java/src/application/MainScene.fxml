@@ -17,7 +17,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane maxHeight="1.7976931348623157E308" onMouseDragged="#dragged" onMousePressed="#pressed" prefHeight="700.0" prefWidth="1200.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.201" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+<BorderPane maxHeight="1.7976931348623157E308" onMouseDragged="#dragged" onMousePressed="#pressed" prefHeight="700.0" prefWidth="1200.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
 	
 	<left>
 		<HBox prefHeight="700.0">
@@ -34,7 +34,7 @@
             			<Text fill="WHITE" text="Number of Territories:" BorderPane.alignment="CENTER">Additional Info 2</Text>
                      </left>
                      <right>
-                        <Text id="player1-numterritories" fx:id="player1numTerritories" fill="WHITE" text="50" textAlignment="RIGHT" BorderPane.alignment="CENTER" />
+                        <Text id="player1-numterritories" fx:id="player1numTerritories" fill="WHITE" text="0" textAlignment="RIGHT" BorderPane.alignment="CENTER" />
                      </right>
                   </BorderPane>
                   <BorderPane>
@@ -51,7 +51,7 @@
                         <Text fill="WHITE" text="Number of Territories:" BorderPane.alignment="CENTER" />
                      </left>
                      <right>
-                        <Text id="player2-numterritories" fx:id="player2numTerritories" fill="WHITE" text="50" textAlignment="RIGHT" BorderPane.alignment="CENTER" />
+                        <Text id="player2-numterritories" fx:id="player2numTerritories" fill="WHITE" text="0" textAlignment="RIGHT" BorderPane.alignment="CENTER" />
                      </right>
                   </BorderPane>
                   <BorderPane>
@@ -68,7 +68,7 @@
                         <Text fill="WHITE" text="Number of Territories:" BorderPane.alignment="CENTER" />
                      </left>
                      <right>
-                        <Text id="player3-numterritories" fx:id="player3numTerritories" fill="WHITE" text="50" textAlignment="RIGHT" BorderPane.alignment="CENTER" />
+                        <Text id="player3-numterritories" fx:id="player3numTerritories" fill="WHITE" text="0" textAlignment="RIGHT" BorderPane.alignment="CENTER" />
                      </right>
                   </BorderPane>
                   <BorderPane>
@@ -85,7 +85,7 @@
                         <Text fill="WHITE" text="Number of Territories:" BorderPane.alignment="CENTER" />
                      </left>
                      <right>
-                        <Text id="player4-numterritories" fx:id="player4numTerritories" fill="WHITE" text="50" textAlignment="RIGHT" BorderPane.alignment="CENTER" />
+                        <Text id="player4-numterritories" fx:id="player4numTerritories" fill="WHITE" text="0" textAlignment="RIGHT" BorderPane.alignment="CENTER" />
                      </right>
                   </BorderPane>
                   <BorderPane>
@@ -102,7 +102,7 @@
                         <Text fill="WHITE" text="Number of Territories:" BorderPane.alignment="CENTER" />
                      </left>
                      <right>
-                        <Text id="player5-numterritories" fx:id="player5numTerritories" fill="WHITE" text="50" textAlignment="RIGHT" BorderPane.alignment="CENTER" />
+                        <Text id="player5-numterritories" fx:id="player5numTerritories" fill="WHITE" text="0" textAlignment="RIGHT" BorderPane.alignment="CENTER" />
                      </right>
                   </BorderPane>
                   <BorderPane>
@@ -119,7 +119,7 @@
                         <Text fill="WHITE" text="Number of Territories:" BorderPane.alignment="CENTER" />
                      </left>
                      <right>
-                        <Text id="player6-numterritories" fx:id="player6numTerritories" fill="WHITE" text="50" textAlignment="RIGHT" BorderPane.alignment="CENTER" />
+                        <Text id="player6-numterritories" fx:id="player6numTerritories" fill="WHITE" text="0" textAlignment="RIGHT" BorderPane.alignment="CENTER" />
                      </right>
                   </BorderPane>
                   <BorderPane>
