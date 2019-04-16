@@ -1,10 +1,6 @@
 @font-face {
     font-family: Game of Thrones;
-<<<<<<< HEAD
-    src: url('GameOfThrones.tff');
-=======
     src: url('GameOfThrones.ttf');
->>>>>>> bafad533fc0fcb209bfd225c69b168bf3c3decc2
 }
 
 .root{
