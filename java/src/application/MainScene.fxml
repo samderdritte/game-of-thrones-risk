@@ -6,6 +6,7 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
@@ -23,24 +24,117 @@
    			<children>
    			<VBox maxWidth="200.0" prefWidth="200.0">
       		<children>
-      			<Text fill="#ffffff00" smooth="false" stroke="#da7b7b" text="Player 1">Additional Info 1</Text>
-      			<Text fill="WHITE" text="Number of Territories:">Additional Info 2</Text>
-                  <Text fill="WHITE" text="Complete Regions:" />
+      			<Text fill="#ffffff00" smooth="false" stroke="#da7b7b" text="Player 1">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Text>
+                  <BorderPane>
+                     <left>
+            			<Text fill="WHITE" text="Number of Territories:" BorderPane.alignment="CENTER">Additional Info 2</Text>
+                     </left>
+                     <right>
+                        <Text id="player1-numterritories" fx:id="player1numTerritories" fill="WHITE" text="50" textAlignment="RIGHT" BorderPane.alignment="CENTER" />
+                     </right>
+                  </BorderPane>
+                  <BorderPane>
+                     <right>
+                        <Text id="player1-numunits" fx:id="player1numUnits" fill="WHITE" text="50" textAlignment="RIGHT" BorderPane.alignment="CENTER" />
+                     </right>
+                     <left>
+                        <Text fill="WHITE" text="Total Units:" BorderPane.alignment="CENTER" />
+                     </left>
+                  </BorderPane>
                   <Text fill="#ffffff00" smooth="false" stroke="#d9b97c" text="Player 2" textAlignment="CENTER" />
-                  <Text fill="WHITE" text="Number of Territories:" />
-                  <Text fill="WHITE" text="Complete Regions:" />
+                  <BorderPane>
+                     <left>
+                        <Text fill="WHITE" text="Number of Territories:" BorderPane.alignment="CENTER" />
+                     </left>
+                     <right>
+                        <Text id="player2-numterritories" fx:id="player2numTerritories" fill="WHITE" text="50" textAlignment="RIGHT" BorderPane.alignment="CENTER" />
+                     </right>
+                  </BorderPane>
+                  <BorderPane>
+                     <right>
+                        <Text id="player2-numunits" fx:id="player2numUnits" fill="WHITE" text="50" textAlignment="RIGHT" BorderPane.alignment="CENTER" />
+                     </right>
+                     <left>
+                        <Text fill="WHITE" text="Total Units:" BorderPane.alignment="CENTER" />
+                     </left>
+                  </BorderPane>
                   <Text fill="#ffffff00" smooth="false" stroke="#9cd97c" text="Player 3" textAlignment="CENTER" />
-                  <Text fill="WHITE" text="Number of Territories:" />
-                  <Text fill="WHITE" text="Complete Regions:" />
+                  <BorderPane>
+                     <left>
+                        <Text fill="WHITE" text="Number of Territories:" BorderPane.alignment="CENTER" />
+                     </left>
+                     <right>
+                        <Text id="player3-numterritories" fx:id="player3numTerritories" fill="WHITE" text="50" textAlignment="RIGHT" BorderPane.alignment="CENTER" />
+                     </right>
+                  </BorderPane>
+                  <BorderPane>
+                     <right>
+                        <Text id="player3-numunits" fx:id="player3numUnits" fill="WHITE" text="50" textAlignment="RIGHT" BorderPane.alignment="CENTER" />
+                     </right>
+                     <left>
+                        <Text fill="WHITE" text="Total Units:" BorderPane.alignment="CENTER" />
+                     </left>
+                  </BorderPane>
                   <Text fill="#ffffff00" smooth="false" stroke="#7cb6d9" text="Player 4" textAlignment="CENTER" />
-                  <Text fill="WHITE" text="Number of Territories:" />
-                  <Text fill="WHITE" text="Complete Regions:" />
+                  <BorderPane>
+                     <left>
+                        <Text fill="WHITE" text="Number of Territories:" BorderPane.alignment="CENTER" />
+                     </left>
+                     <right>
+                        <Text id="player4-numterritories" fx:id="player4numTerritories" fill="WHITE" text="50" textAlignment="RIGHT" BorderPane.alignment="CENTER" />
+                     </right>
+                  </BorderPane>
+                  <BorderPane>
+                     <right>
+                        <Text id="player4-numunits" fx:id="player4numUnits" fill="WHITE" text="50" textAlignment="RIGHT" BorderPane.alignment="CENTER" />
+                     </right>
+                     <left>
+                        <Text fill="WHITE" text="Total Units:" BorderPane.alignment="CENTER" />
+                     </left>
+                  </BorderPane>
                   <Text fill="#ffffff00" smooth="false" stroke="#9380d9" text="Player 5" textAlignment="CENTER" />
-                  <Text fill="WHITE" text="Number of Territories:" />
-                  <Text fill="WHITE" text="Complete Regions:" />
+                  <BorderPane>
+                     <left>
+                        <Text fill="WHITE" text="Number of Territories:" BorderPane.alignment="CENTER" />
+                     </left>
+                     <right>
+                        <Text id="player5-numterritories" fx:id="player5numTerritories" fill="WHITE" text="50" textAlignment="RIGHT" BorderPane.alignment="CENTER" />
+                     </right>
+                  </BorderPane>
+                  <BorderPane>
+                     <right>
+                        <Text id="player5-numunits" fx:id="player5numUnits" fill="WHITE" text="50" textAlignment="RIGHT" BorderPane.alignment="CENTER" />
+                     </right>
+                     <left>
+                        <Text fill="WHITE" text="Total Units:" BorderPane.alignment="CENTER" />
+                     </left>
+                  </BorderPane>
                   <Text fill="#ffffff00" smooth="false" stroke="#cd80d9" text="Player 6" textAlignment="CENTER" />
-                  <Text fill="WHITE" text="Number of Territories:" />
-                  <Text fill="WHITE" text="Complete Regions:" />
+                  <BorderPane>
+                     <left>
+                        <Text fill="WHITE" text="Number of Territories:" BorderPane.alignment="CENTER" />
+                     </left>
+                     <right>
+                        <Text id="player6-numterritories" fx:id="player6numTerritories" fill="WHITE" text="50" textAlignment="RIGHT" BorderPane.alignment="CENTER" />
+                     </right>
+                  </BorderPane>
+                  <BorderPane>
+                     <right>
+                        <Text id="player6-numunits" fx:id="player6numUnits" fill="WHITE" text="50" textAlignment="RIGHT" BorderPane.alignment="CENTER" />
+                     </right>
+                     <left>
+                        <Text fill="WHITE" text="Total Units:" BorderPane.alignment="CENTER" />
+                     </left>
+                  </BorderPane>
+                  <Separator prefWidth="200.0">
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Separator>
       		</children>
                <HBox.margin>
                   <Insets left="10.0" right="10.0" top="10.0" />
@@ -333,7 +427,7 @@
                               <String fx:value="thenorth-territory-label" />
                               <String fx:value="territory-label" />
                            </styleClass></Button>
-                        <Label alignment="TOP_CENTER" cache="true" contentDisplay="CENTER" depthTest="DISABLE" graphicTextGap="0.0" prefHeight="25.0" prefWidth="29.0" styleClass="territory-units-label" stylesheets="@application.css" text="5" textAlignment="CENTER" textFill="#ff6924" translateX="99.0" wrapText="true">
+                        <Label id="wolfswoodUnits" alignment="TOP_CENTER" cache="true" contentDisplay="CENTER" depthTest="DISABLE" graphicTextGap="0.0" prefHeight="25.0" prefWidth="29.0" styleClass="territory-units-label" stylesheets="@application.css" text="5" textAlignment="CENTER" textFill="#ff6924" translateX="99.0" wrapText="true">
                            <font>
                               <Font name="Game of Thrones" size="10.0" />
                            </font>
@@ -800,6 +894,9 @@
                <font>
                   <Font name="Game of Thrones" size="12.0" />
                </font>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
             </Label>
             <Pane prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
             <ImageView id="close-button" fitHeight="20.0" fitWidth="20.0" onMouseClicked="#close" pickOnBounds="true" preserveRatio="true">

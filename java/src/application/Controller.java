@@ -11,9 +11,11 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.Labeled;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.VBox;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 public class Controller {
@@ -60,7 +62,34 @@ public class Controller {
 		window.centerOnScreen();
 		
 		window.show();
+		
+		System.out.println("---");
+		
+		Text player1Numunits = (Text) mainScene.lookup("#player1-numunits");
+		Text player2Numunits = (Text) mainScene.lookup("#player2-numunits");
+		Text player3Numunits = (Text) mainScene.lookup("#player3-numunits");
+		Text player4Numunits = (Text) mainScene.lookup("#player4-numunits");
+		Text player5Numunits = (Text) mainScene.lookup("#player5-numunits");
+		Text player6Numunits = (Text) mainScene.lookup("#player6-numunits");
+		Text player1Numterritories = (Text) mainScene.lookup("#player1-numterritories");
+		Text player2Numterritories = (Text) mainScene.lookup("#player2-numterritories");
+		Text player3Numterritories = (Text) mainScene.lookup("#player3-numterritories");
+		Text player4Numterritories = (Text) mainScene.lookup("#player4-numterritories");
+		Text player5Numterritories = (Text) mainScene.lookup("#player5-numterritories");
+		Text player6Numterritories = (Text) mainScene.lookup("#player6-numterritories");
+		//test for printing out some values
+		System.out.println(player1Numunits.getText());
+		System.out.println(player6Numterritories.getText());
+		player1Numunits.setText("45");
+		
+		//change css class for units label
+		Label wolfswoodUnits = (Label) mainScene.lookup("#wolfswoodUnits");
+		System.out.println(wolfswoodUnits.getStyleClass());
+		wolfswoodUnits.getStyleClass().add("territory-units-label-player1");
+		
+		
 	}
+	
 	
 	public void printUnits(ActionEvent e) {
 		Button btn = (Button) e.getSource();

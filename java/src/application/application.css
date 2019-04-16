@@ -1,5 +1,5 @@
 @font-face {
-    font-family: GameOfThrones;
+    font-family: Game of Thrones;
     src: url('GameOfThrones.tff');
 }
 
@@ -37,7 +37,7 @@ Button:hover {
 }
 .app-header-name {
 	-fx-text-fill: #FFF;	
-	-fx-font-family: 'Game Of Thrones';
+	-fx-font-family: 'Game of Thrones';
 }
 
 .scroll-bar:vertical {
@@ -56,7 +56,7 @@ Button:hover {
 	-fx-background-color: rgb(27, 89, 78);
 	-fx-text-fill: #fff;
 	-fx-border-color: #fff;
-	-fx-font-family: 'Game Of Thrones';
+	-fx-font-family: 'Game of Thrones';
 	-fx-font-size: 7pt;
 	-fx-padding: 4;
 }
@@ -97,7 +97,7 @@ Button:hover {
 	-fx-background-color: white;
 	-fx-border-color: #fff;
 	-fx-text-fill: #383838;
-	-fx-font-family: 'Game Of Thrones';
+	-fx-font-family: 'Game of Thrones';
 	-fx-font-size: 11pt;
 	-fx-alignment: 'TOP_CENTER';
 }
